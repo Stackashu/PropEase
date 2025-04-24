@@ -5,7 +5,7 @@
       /* soft dark overlay   */ rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
     ),
-    url("./heropic.jpg");
+    url("https://images.pexels.com/photos/262367/pexels-photo-262367.jpeg");
   background-size: cover; /* always fills */
   background-position: center;
   background-repeat: no-repeat;
