@@ -1,0 +1,163 @@
+.nav-outdiv {
+  width: 100%;
+  padding: 5px 20px;
+  /* background: red; */
+}
+
+.nav-inndiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-hamburger {
+  display: none;
+}
+.nav-imgdiv {
+  width: 5%;
+  /* border: 2px solid; */
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  display: flex;
+  place-items: center;
+  border-radius: 50%;
+}
+.nav-imgdiv img {
+  width: 110%;
+}
+nav {
+  width: 30%;
+  /* background: red; */
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  cursor: pointer;
+  font-size: 1.5rem;
+  list-style: none;
+  transition: all 0.5s ease;
+  font-size: 1.3rem;
+ 
+}
+nav ul li:hover {
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  
+  list-style: none;
+}
+nav ul li:first-child {
+    
+  font-size: 1.5rem;
+  background: rgb(233, 233, 93);
+  padding: 10px 15px;
+  color: rgb(0, 65, 194);
+  border-radius: 50px;
+  list-style: none;
+}
+.nav-innright {
+  background: rgb(233, 233, 93);
+  border-radius: 25px;
+  padding: 10px 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 9%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.nav-innright:hover {
+  background: rgba(233, 233, 93, 0.614);
+  border-radius: 25px;
+  padding: 10px 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 9%;
+  cursor: pointer;
+}
+
+.nav-innright h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1240px) {
+  .nav-imgdiv {
+    width: 7%;
+  } /* logo a bit wider */
+  nav {
+    width: 45%;
+  } /* room for more items */
+  nav ul li {
+    font-size: 1.1rem;
+  } /* shrink text */
+  .nav-innright {
+    width: 12%;
+  } /* adjust button */
+  .nav-innright h1 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .nav-imgdiv{
+    width: 10%;
+  }
+  .nav-hamburger {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  .nav-inndiv {
+    position: relative;
+  }
+  .nav-innright {
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-innright svg {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+    nav {
+      display: none;
+    }
+    .nav-imgdiv{
+      width: 15%;
+    }
+    .nav-hamburger {
+      display: block;
+      position: absolute;
+      right: 0;
+    }
+    .nav-inndiv {
+      position: relative;
+    }
+    .nav-innright {
+      margin-right: 10%;
+      display: flex;
+      width: 25%;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .nav-innright svg {
+      display: none;
+    }
+  }
+  
