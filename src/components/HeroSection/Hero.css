@@ -1,0 +1,146 @@
+.hero-out {
+  width: 100%;
+  height: clamp(60vh, 90vh, 900px); /* responsive height */
+  background-image: linear-gradient(
+      /* soft dark overlay   */ rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("./heropic.jpg");
+  background-size: cover; /* always fills */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* subtle parallax on desktop */
+  overflow: hidden; /* just in case */
+
+  position: relative;
+}
+
+.hero-inndiv {
+  border-top: 10px solid white;
+  border-left: 10px solid white;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  /* transform: translateX(-50%); */
+}
+
+.first-head {
+  font-size: 4.8rem;
+  line-height: 1;
+  color: white;
+  /* background: red; */
+  margin-right: -10%;
+  margin-top: 5%;
+  text-align: right;
+}
+.first-head:last-child {
+  font-size: 4.8rem;
+  line-height: 1;
+  color: white;
+  text-decoration: underline;
+}
+.first-head span {
+  font-size: 5.5rem;
+  color: rgba(216, 213, 213, 0.701);
+}
+
+.second-head {
+  text-align: right;
+  color: white;
+  font-size: 1.8rem;
+  background: white;
+  color: black;
+  padding: 20px 22px;
+  margin-right: -15%;
+  margin-top: 5%;
+}
+.hero-inndiv div {
+  display: flex;
+  justify-content: end;
+}
+/* ───────────── Desktop → 1240 px ───────────── */
+@media (max-width: 1240px) {
+  .first-head,
+  .first-head:last-child {
+    font-size: 4rem;
+  }
+  .first-head span {
+    font-size: 4.6rem;
+  }
+  .second-head {
+    font-size: 1.6rem;
+    padding: 18px 20px;
+  }
+  .hero-inndiv {
+    top: 28%;
+  }
+}
+
+/* ───────────── Laptop / small‑desktop → 990 px ───────────── */
+@media (max-width: 990px) {
+  .first-head,
+  .first-head:last-child {
+    font-size: 3.2rem;
+    margin-right: -6%;
+  }
+  .first-head span {
+    font-size: 3.8rem;
+  }
+  .second-head {
+    font-size: 1.4rem;
+    margin-right: -10%;
+  }
+  .hero-inndiv {
+    top: 26%;
+    border-width: 8px;
+  }
+}
+
+/* ───────────── Tablet (≤768 px) ───────────── */
+@media (max-width: 768px) {
+  /* stack content center‑left instead of hard‑right */
+  .hero-out {
+    height: 50vh;
+  }
+  .hero-inndiv {
+    border-width: 6px;
+  }
+  
+
+  .first-head,
+  .first-head:last-child {
+    font-size: 2.4rem;
+    margin-right: -10% 0 0;
+    text-align: right;
+  }
+  .first-head span {
+    font-size: 3rem;
+  }
+  .second-head {
+    font-size: 1.2rem;
+    margin: 3% 0 0;
+    text-align: left;
+    padding: 14px 18px;
+  }
+}
+
+/* ───────────── Mobile (≤480 px) ───────────── */
+@media (max-width: 480px) {
+  .hero-out {
+    background-attachment: scroll;
+  } /* disable parallax for mobile perf */
+
+  .first-head,
+  .first-head:last-child {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+  .first-head span {
+    font-size: 2.2rem;
+  }
+
+  .second-head {
+    font-size: 1rem;
+    padding: 12px 16px;
+  }
+}

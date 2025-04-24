@@ -1,7 +1,7 @@
 .nav-outdiv {
   width: 100%;
-  padding: 5px 20px;
-  /* background: red; */
+  padding: 0px 20px;
+  /* background: rgb(255, 255, 255); */
 }
 
 .nav-inndiv {
@@ -14,7 +14,7 @@
   display: none;
 }
 .nav-imgdiv {
-  width: 5%;
+  width: 4%;
   /* border: 2px solid; */
   overflow: hidden;
   aspect-ratio: 1/1;
@@ -38,53 +38,46 @@ nav ul {
 
 nav ul li {
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   list-style: none;
   transition: all 0.5s ease;
   font-size: 1.3rem;
- 
 }
 nav ul li:hover {
-  padding: 10px 15px;
+  padding: 7px 20px;
   border-radius: 25px;
   cursor: pointer;
   font-size: 1.3rem;
-  
+  background:  rgba(91, 91, 90, 0.066);
   list-style: none;
 }
 nav ul li:first-child {
-    
-  font-size: 1.5rem;
-  background: rgb(233, 233, 93);
-  padding: 10px 15px;
-  color: rgb(0, 65, 194);
+  font-size: 1.3rem;
+  background: rgba(18, 18, 17, 0.488);
+  padding: 7px 20px;
   border-radius: 50px;
+  color:white;
   list-style: none;
 }
 .nav-innright {
-  background: rgb(233, 233, 93);
+  background: rgb(0, 0, 0);
   border-radius: 25px;
-  padding: 10px 17px;
+  padding: 12px 20px;
   display: flex;
   justify-content: space-between;
+  color: white;
   align-items: center;
-  width: 9%;
+  width: 8%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .nav-innright:hover {
-  background: rgba(233, 233, 93, 0.614);
-  border-radius: 25px;
-  padding: 10px 17px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 9%;
-  cursor: pointer;
+  background: rgba(63, 63, 62, 0.614);
+
 }
 
 .nav-innright h1 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
@@ -94,7 +87,7 @@ nav ul li:first-child {
   } /* logo a bit wider */
   nav {
     width: 45%;
-  } /* room for more items */
+  } /* room for more items *
   nav ul li {
     font-size: 1.1rem;
   } /* shrink text */
@@ -105,12 +98,38 @@ nav ul li:first-child {
     font-size: 1.1rem;
   }
 }
+@media (max-width: 990px) {
+  /* Slightly roomier logo and CTA, tighter nav */
+  .nav-imgdiv {
+    width: 8%;
+  }
+
+  nav {
+    width: 50%;
+  } /* pull nav closer to logo */
+  nav ul li {
+    font-size: 1.2rem;
+  }
+  nav ul li:first-child {
+    font: 1.1rem;
+  }
+  .nav-innright {
+    width: 11%;
+    padding: 8px 14px; /* keep button balanced */
+  }
+  .nav-innright svg {
+    display: none;
+  }
+}
 
 @media (max-width: 768px) {
+  .nav-outdiv{
+    padding: 15px 20px;
+  }
   nav {
     display: none;
   }
-  .nav-imgdiv{
+  .nav-imgdiv {
     width: 10%;
   }
   .nav-hamburger {
@@ -124,40 +143,48 @@ nav ul li:first-child {
   .nav-innright {
     margin-right: 5%;
     display: flex;
+    width: 17%;
     justify-content: center;
     align-items: center;
   }
-
+  .nav-innright h1{
+    font-size: 1.2rem;
+  }
   .nav-innright svg {
     display: none;
   }
 }
 
 @media (max-width: 500px) {
-    nav {
-      display: none;
-    }
-    .nav-imgdiv{
-      width: 15%;
-    }
-    .nav-hamburger {
-      display: block;
-      position: absolute;
-      right: 0;
-    }
-    .nav-inndiv {
-      position: relative;
-    }
-    .nav-innright {
-      margin-right: 10%;
-      display: flex;
-      width: 25%;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .nav-innright svg {
-      display: none;
-    }
+  .nav-outdiv{
+    padding: 15px 10px;
   }
-  
+  nav {
+    display: none;
+  }
+  .nav-imgdiv {
+    width: 15%;
+  }
+  .nav-hamburger {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  .nav-inndiv {
+    position: relative;
+  }
+  .nav-innright {
+    margin-right: 10%;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+  }
+ .nav-innright h1{
+  font-size: .8rem;
+
+ }
+  .nav-innright svg {
+    display: none;
+  }
+}
