@@ -1,0 +1,143 @@
+.about-out {
+  width: 100%;
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  padding: 30px;
+  margin-bottom: 20vh;
+  gap: 5%;
+}
+
+.head-box {
+  margin-top: 2%;
+  display: flex;
+  /* background: red; */
+  width: 100%;
+  justify-content: center;
+}
+.about-head {
+  font-size: 1.3rem;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  padding: 8px 20px;
+  border-radius: 25px;
+  color: white;
+}
+
+.about-inn {
+  margin: 0px 10%;
+  background: rgba(236, 236, 236, 0.404);
+  display: flex;
+  padding: 20px 5%;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.about-innleft div {
+  width: 30vw;
+  height: 60vh;
+  background: url("./manwithlaptop.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-innleft {
+  width: 40%;
+}
+
+.about-innright {
+  width: 40%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: transparent;
+  padding: 5px;
+  box-shadow: 0 6px 18px rgba(61, 60, 60, 0.16);
+}
+
+.about-innright h1 {
+  font-size: 1.5rem;
+  padding: 50px;
+  color: rgb(82, 81, 81);
+}
+
+.about-innright button {
+  border: none;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 1.4rem;
+  padding: 10px 20px;
+  width: 90%;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-innright button:hover {
+  background: rgb(32, 30, 30);
+  color: white;
+  box-shadow: 0px 1px 20px rgb(0, 0, 0, 0.5);
+}
+
+.about-innright button svg {
+  margin-left: 1%;
+}
+
+/* ───────────── Desktop → 1240 px ───────────── */
+@media (max-width: 1240px) {
+    .about-inn        { padding: 20px 6%; }
+    .about-innleft div{ width: 32vw; height: 55vh; }
+    .about-innright   { width: 42%; height: 46vh; }
+    .about-innright h1{ font-size: 1.3rem; padding: 40px; }
+    .about-innright button{ font-size: 1.3rem; }
+  }
+  
+  /* ───────────── Small‑desktop / laptop → 990 px ───────────── */
+  @media (max-width: 990px) {
+    .about-inn        { flex-wrap: wrap; gap: 40px; }
+    .about-innleft,
+    .about-innright   { width: 100%; }
+  
+    .about-innleft div{ width: 100%; height: 45vh; }
+  
+    .about-innright   { height: auto; padding: 30px 5%; }
+    .about-innright h1{ font-size: 1.2rem; padding: 30px 0; text-align: center; }
+    .about-innright button{ width: 80%; font-size: 1.2rem; }
+  }
+  
+  /* ───────────── Tablet (≤768 px) ───────────── */
+  @media (max-width: 768px) {
+    .about-out        {  margin-bottom: 10vh; }
+  
+    .about-inn        { padding: 18px 4%; }
+    .about-innleft div{ height: 38vh; }
+  
+    .about-innright   { padding: 25px 4%; box-shadow: none; }
+    .about-innright h1{ font-size: 1.1rem; padding: 20px 0; }
+    .about-innright button{ width: 90%; font-size: 1.1rem; }
+  }
+  
+  /* ───────────── Mobile (≤480 px) ───────────── */
+  @media (max-width: 480px) {
+    .about-out        { padding: 20px 16px; gap: 10%; margin-bottom: 10%; }
+  
+    .about-head       { font-size: 1rem; padding: 6px 16px; }
+  
+    .about-inn        { padding: 16px 4%; }
+  
+    .about-innleft div{ height: 32vh; }
+  
+    .about-innright   { padding: 20px 4%; }
+    .about-innright h1{ font-size: 1rem; padding: 16px 0; }
+    .about-innright button{
+      font-size: 1rem;
+      width: 100%;
+      padding: 10px 12px;
+    }
+  }
+  

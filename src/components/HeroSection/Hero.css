@@ -1,6 +1,6 @@
 .hero-out {
   width: 100%;
-  height: clamp(60vh, 90vh, 900px); /* responsive height */
+  height: clamp(30vh, 90vh, 950px); /* responsive height */
   background-image: linear-gradient(
       /* soft dark overlay   */ rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
@@ -128,6 +128,7 @@
 @media (max-width: 480px) {
   .hero-out {
     background-attachment: scroll;
+    height: 60vh;
   } /* disable parallax for mobile perf */
 
   .first-head,
