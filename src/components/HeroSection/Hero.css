@@ -1,6 +1,6 @@
 .hero-out {
   width: 100%;
-  height: clamp(30vh, 90vh, 950px); /* responsive height */
+  height: clamp(30vh, 95vh, 950px); /* responsive height */
   background-image: linear-gradient(
       /* soft dark overlay   */ rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)

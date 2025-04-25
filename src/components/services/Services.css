@@ -1,0 +1,137 @@
+.service-out {
+  /* background: red; */
+  width: 100%;
+  padding: 20px;
+  margin-top: 3%;
+}
+
+.service-inndiv {
+  display: flex;
+  place-content: center;
+}
+
+.service-inndiv h1 {
+  background: black;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 25px;
+  font-size: 1.3rem;
+}
+
+.services-box {
+  width: 100%;
+  /* background: red; */
+  display: flex;
+  place-content: center;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.ser-outbox {
+  background: rgb(255, 255, 255);
+  width: 25%;
+  /* border-radius: 15px; */
+  overflow: hidden;
+  margin: 3%;
+  /* background: rgb(0, 0, 0); */
+  /* border: 2px solid rgb(3, 3, 3); */
+  box-shadow: 1px 0px 30px rgb(87, 86, 86, 0.6);
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.ser-outbox:hover {
+  transform: scale(1.1);
+}
+.ser-outbox img {
+  width: 100%;
+  height: 100%;
+}
+
+.ser-outbox div {
+  margin: 20px 10px;
+}
+
+.ser-outbox h1 {
+  font-size: 1.4rem;
+  background: rgb(255, 255, 255);
+  /* border: 1px solid rgb(0, 0, 0); */
+  color: rgb(102, 100, 100);
+  display: inline;
+  padding: 5px 10px;
+  /* margin-top: 10%; */
+}
+
+/* For devices <= 1240px */
+@media (max-width: 1240px) {
+    .ser-outbox {
+      width: 30%;
+    }
+  }
+  
+  /* For devices <= 990px */
+  @media (max-width: 990px) {
+    .ser-outbox {
+      width: 40%;
+      margin: 2%;
+    }
+  
+    .service-inndiv h1 {
+      font-size: 1.2rem;
+      padding: 8px 16px;
+    }
+  }
+  
+  /* For tablets (<= 768px) */
+  @media (max-width: 768px) {
+    .ser-outbox {
+      width: 80%;
+      margin: 3% auto;
+    }
+  
+    .service-inndiv h1 {
+      font-size: 1.1rem;
+      padding: 6px 14px;
+    }
+  
+    .ser-outbox h1 {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* For mobile (<= 480px) */
+  @media (max-width: 480px) {
+    .service-out {
+      padding: 10px;
+      margin-top: 10%;
+    }
+  
+    .service-inndiv h1 {
+      font-size: 1.2rem;
+      padding: 8px 20px;
+      text-align: center;
+    }
+  
+    .services-box {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .ser-outbox {
+      width: 80%;
+      margin: 5% 0;
+    }
+  
+    .ser-outbox h1 {
+      font-size: 1rem;
+      padding: 4px 8px;
+    }
+  
+    .ser-outbox div {
+      margin: 10px;
+    }
+  }
+  

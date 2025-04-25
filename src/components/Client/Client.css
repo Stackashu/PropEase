@@ -1,14 +1,15 @@
 .client-outdiv {
   background: rgb(5, 5, 5);
-  padding: 20px;
-  height: 40vh;
+  padding: 20px 20px 40px;
+  height: 50vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20%;
   justify-content: center;
-  margin-bottom: 20%;
+  /* margin-bottom: 20%; */
+
 }
 
 .client-in {
@@ -98,7 +99,11 @@
     flex-direction: column;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
   }
-
+  .companies:hover {
+    transform: scale(1.01);
+    transition: all 0.5 ease;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0);
+  }
   .companies img {
     width: 20%;
   }
@@ -108,7 +113,7 @@
 @media (max-width: 480px) {
   .client-outdiv {
     padding: 10px;
-    margin-top: 15%;
+    margin-top: 5%;
     gap: 5%;
     height: 70vh;
   }

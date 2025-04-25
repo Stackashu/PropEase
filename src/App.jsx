@@ -4,6 +4,7 @@ import Hero from './components/HeroSection/Hero'
 import About from './components/About/About'
 import SideTray from './components/navbar/SideTray'
 import Client from './components/Client/Client'
+import Services from './components/services/Services'
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
       <Hero/>
       <About/>
       <Client/>
+      <Services />
     </div>
   )
 }
