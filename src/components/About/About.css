@@ -1,10 +1,11 @@
 .about-out {
-  width: 100%;
+  width: 100vw;
   display: flex;
   height: 90vh;
   flex-direction: column;
   padding: 30px;
-  margin-bottom: 20vh;
+  /* background: rebeccapurple; */
+  /* margin-bottom: 20vh; */
   gap: 5%;
 }
 
@@ -30,7 +31,7 @@
   display: flex;
   padding: 20px 5%;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 .about-innleft div {
@@ -81,7 +82,7 @@
 .about-innright button:hover {
   background: rgb(32, 30, 30);
   color: white;
-  box-shadow: 0px 1px 20px rgb(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 20px rgba(255, 255, 255, 0.5);
 }
 
 .about-innright button svg {
@@ -114,30 +115,31 @@
   @media (max-width: 768px) {
     .about-out        {  margin-bottom: 10vh; }
   
-    .about-inn        { padding: 18px 4%; }
+    .about-inn        {  padding: 18px 4%; }
     .about-innleft div{ height: 38vh; }
   
-    .about-innright   { padding: 25px 4%; box-shadow: none; }
+    .about-innright   { padding: 25px 4%;  }
     .about-innright h1{ font-size: 1.1rem; padding: 20px 0; }
     .about-innright button{ width: 90%; font-size: 1.1rem; }
   }
   
   /* ───────────── Mobile (≤480 px) ───────────── */
   @media (max-width: 480px) {
-    .about-out        { padding: 20px 16px; gap: 10%; margin-bottom: 10%; }
+    .about-out        { padding: 20px 16px; gap: 5%; margin-bottom: 10%; }
   
+    .head-box         { margin-top: 5%;}
     .about-head       { font-size: 1rem; padding: 6px 16px; }
   
     .about-inn        { padding: 16px 4%; }
   
     .about-innleft div{ height: 32vh; }
   
-    .about-innright   { padding: 20px 4%; }
+    .about-innright   { padding: 20px 4%; gap:2% }
     .about-innright h1{ font-size: 1rem; padding: 16px 0; }
     .about-innright button{
       font-size: 1rem;
       width: 100%;
-      padding: 10px 12px;
+      padding: 10px 0px;
     }
   }
   

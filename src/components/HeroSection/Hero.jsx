@@ -11,7 +11,7 @@ const Hero = () => {
         <h1 className='second-head'>Propease Reality Pvt Ltd.</h1>
         </div>
 
-      </div>
+      </div> 
     </div>
   )
 }

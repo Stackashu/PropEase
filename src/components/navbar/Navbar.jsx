@@ -1,6 +1,8 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import "./Navbar.css"
 const Navbar = () => {
+  const[trayOpen,setTrayOpen] = useState(false) 
+
   return (
     <div className='nav-outdiv'>
 
@@ -15,7 +17,7 @@ const Navbar = () => {
             <li>Home</li>
             <li>About</li>
             <li>Services</li>
-            <li>Vision</li>
+            <li>Vision</li> 
             <li>Values</li>
           </ul>
         </nav>
@@ -27,16 +29,36 @@ const Navbar = () => {
           <h1>Enquire</h1>
         </div>
 
-        <div className='nav-hamburger'>
+        <div onClick={()=>{setTrayOpen(true) ; alert("clicked")}} className='nav-hamburger'>
           <svg xmlns="http://www.w3.org/2000/svg"    width="24" height="24" viewBox="0 0 24 24">
          <rect y="4"  width="24" height="3" rx="1.5"/>
          <rect y="10.5" width="24" height="3" rx="1.5"/>
          <rect y="17" width="24" height="3" rx="1.5"/>
         </svg>
         </div>
-         
-
       </div>
+       
+      <div className='SideTray-out'>
+          <div className="sideNav" style={{ right : trayOpen ? "0" : "-100%" }}>
+    <div>
+       <button onClick={()=>{setTrayOpen(false)}} >
+         <svg className='cross-svg' xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" >
+           <line x1="18" y1="6" x2="6" y2="18"></line>
+           <line x1="6" y1="6" x2="18" y2="18"></line>
+         </svg>
+       </button>
+    </div>
+    <ul className='hiddenNav'>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Vision</li>
+      <li>Values</li>
+    </ul>
+     </div>
+    </div>
+  
+     
     </div>
   )
 }
