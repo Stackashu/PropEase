@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-const About = () => {
+const About = ({scrollToView}) => {
   return (
     <div className="about-out">
       <div className="head-box">
@@ -19,7 +19,13 @@ const About = () => {
             the property buying, selling, and renting experience through
             innovative technology and exceptional customer service.
           </h1>
-          <button>
+          <div>
+            <h2 className="clientnum">
+              Client Collaborations
+            </h2>
+            <h2 className="clientnum2"> 15+</h2>
+          </div>
+          <button onClick={()=>{scrollToView('Client')}}>
             Explore more
             <svg
               xmlns="http://www.w3.org/2000/svg"

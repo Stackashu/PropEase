@@ -84,7 +84,7 @@
 @media (max-width: 768px) {
   .client-outdiv {
     height: 80vh;
-    margin-top: -15%;
+    /* margin-top: -5%; */
   }
   .client-in h1 {
     font-size: 1.4rem;
@@ -113,9 +113,9 @@
 @media (max-width: 480px) {
   .client-outdiv {
     padding: 10px;
-    margin-top: 5%;
+    margin-top: 70%;
     gap: 5%;
-    height: 70vh;
+    height: 90vh;
   }
 
   .client-in h1 {

@@ -1,6 +1,6 @@
 .hero-out {
   width: 100%;
-  height: clamp(30vh, 95vh, 950px); /* responsive height */
+  height: clamp(30vh, 100vh, 100vh); /* responsive height */
   background-image: linear-gradient(
       /* soft dark overlay   */ rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
@@ -19,19 +19,19 @@
   border-top: 10px solid white;
   border-left: 10px solid white;
   position: absolute;
-  top: 30%;
-  left: 5%;
+  top: 20%;
+  left: 10%;
   /* transform: translateX(-50%); */
 }
-
+ 
 .first-head {
   font-size: 4.8rem;
   line-height: 1;
   color: white;
   /* background: red; */
-  margin-right: -10%;
-  margin-top: 5%;
-  text-align: right;
+  margin-right: -35%;
+  margin-top: 15%;
+  text-align: left;
 }
 .first-head:last-child {
   font-size: 4.8rem;
@@ -51,8 +51,9 @@
   font-size: 1.8rem;
   background: white;
   color: black;
+  text-align: right;
   padding: 20px 22px;
-  margin-right: -15%;
+  margin-right: -35%;
   margin-top: 5%;
 }
 .hero-inndiv div {
@@ -102,25 +103,26 @@
 @media (max-width: 768px) {
   /* stack content center‑left instead of hard‑right */
   .hero-out {
-    height: 60vh;
+    height: 100vh;
   }
   .hero-inndiv {
     border-width: 6px;
+    top: 15%;
   }
   
 
   .first-head,
   .first-head:last-child {
-    font-size: 2.4rem;
+    font-size: 5rem;
     margin-right: -10% 0 0;
-    text-align: right;
+    text-align: left;
   }
   .first-head span {
-    font-size: 3rem;
+    font-size: 6rem;
   }
   .second-head {
-    font-size: 1.2rem;
-    margin: 3% 0 0;
+    font-size: 2rem;
+    margin: 3% -30% 0;
     text-align: left;
     padding: 14px 18px;
   }
@@ -130,26 +132,36 @@
 @media (max-width: 480px) {
   .hero-out {
     background-attachment: scroll;
-    height: 50vh;
+    height: 100vh;
   } /* disable parallax for mobile perf */
 
   .hero-inndiv {
-    top: 33%;
+    top: 15%;
+    width: 60%;
     left: 5%;
     /* transform: translateX(-50%); */
+    /* background: #000; */
   }
   .first-head,
   .first-head:last-child {
-    font-size: 1.5rem;
+    width: 100%;
+    text-align: left;
+    letter-spacing: 1px;
+    /* word-wrap: break-word; */
+    /* overflow-wrap:  break-word; */
+    /* background: red; */
+    font-size: 2.6rem;
+    margin-left: 25%;
     line-height: 1.1;
   }
   .first-head span {
-    font-size: 2rem;
+    font-size: 3rem;
+
   }
 
   .second-head {
     font-size: 1rem;
     padding: 12px 16px;
-    margin-right: -15%;
+    margin-right: -35%;
   }
 }

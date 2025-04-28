@@ -5,7 +5,7 @@ const Client = () => {
   return (
     <div className='client-outdiv'>
         <div className="client-in">
-        <h1> Our Clients</h1>
+        <h1>Clients</h1>
         </div> 
 
         <div className="companies">

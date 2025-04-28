@@ -50,13 +50,14 @@ nav ul li:hover {
   border-radius: 25px;
   cursor: pointer;
   font-size: 1.3rem;
+  color: black;
   background: rgba(91, 91, 90, 0.066);
   list-style: none;
 }
-nav ul li:first-child {
+.active {
   font-size: 1.3rem;
-  background: rgba(18, 18, 17, 0.488);
-  padding: 7px 20px;
+  background: rgba(139, 139, 138, 0.488);
+  padding: 4px 20px;
   border-radius: 50px;
   color: white;
   list-style: none;
@@ -131,8 +132,8 @@ nav ul li:first-child {
     padding: 15px 20px;
   }
   .cross-svg {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
   nav {
     display: none;
@@ -149,7 +150,7 @@ nav ul li:first-child {
     position: relative;
   }
   .nav-innright {
-    margin-right: 5%;
+    margin-right: 8%;
     display: flex;
     width: 17%;
     justify-content: center;
@@ -205,21 +206,10 @@ nav ul li:first-child {
 
 
 
-.SideTray-out{
-  /* background-color: black; */
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  /* z-index: 10; */
-  position: absolute;
-  display: none;
-  top: 0;
-}
 .sideNav {
-  position: absolute;
- 
+  position: fixed;
   z-index: 10;
-  background: rgb(156, 86, 86);
+  background: rgb(255, 255, 255);
   width: 50%;
   height: 100%;
   padding: 0px 10px;
