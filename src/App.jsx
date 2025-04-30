@@ -9,6 +9,7 @@ import VisionValues from "./components/Values/Values";
 import Form from "./components/Form/Form";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   const[contactTray,setContactTray] = useState(false)
@@ -72,6 +73,7 @@ const App = () => {
         <Form setContactTray={setContactTray} />
       </div>
       <Footer />
+      <ToastContainer/>
     </div>
   );
 };

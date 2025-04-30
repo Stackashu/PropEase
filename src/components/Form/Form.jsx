@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import './Form.css';
+import { toast } from 'react-toastify';
 
 const Form = ({setContactTray}) => {
   const [formData, setFormData] = useState({
@@ -37,14 +38,12 @@ const Form = ({setContactTray}) => {
       'E_HW1z3eJSREPvXTr'
     )
     .then((result) => {
-      console.log('Success:', result.text);
-      alert("Message sent successfully!"); // here ihave to toastify
+      toast.success('Message Sent Succesfully')
       setFormData({ name: '', email: '', number: '', message: '' });
     }, (error) => {
       console.error('Error:', error.text);
-      alert("Failed to send message.");
-    });
-    setContactTray(false);
+    }).then(()=>setContactTray(false));
+    
   };
 
   return (

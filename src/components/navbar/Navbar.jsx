@@ -3,7 +3,7 @@ import "./Navbar.css"
 const Navbar = ({scrollToView,setContactTray}) => {
   const[trayOpen,setTrayOpen] = useState(false) 
   const[activeIndex,setActiveIndex] = useState(null)
-  const navs=['Home','About','Client','Services','Values']
+  const navs=['Home','About','Client','Services',]
 
   return (
     <div className='nav-outdiv'>
