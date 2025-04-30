@@ -1,14 +1,13 @@
 import React from 'react'
-
-const VisionValues = () => {
+import './Values.css'
+const Values = () => {
   return (
     <div>
       <div className="dounle-in">
-        <div className='vision'></div>
         <div className='values'></div>
       </div>
     </div>
   )
 }
 
-export default VisionValues
+export default Values

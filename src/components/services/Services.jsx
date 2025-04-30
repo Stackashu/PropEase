@@ -4,7 +4,7 @@ const Services = () => {
   const services = [
     { path: "/property.jpeg", name: "Property Listing And Searches" },
     { path: "/realestate.jpeg", name: "Real Estate Consulting" },
-    { path: "/propertymangae.jpeg", name: "Porperty Management" },
+    { path: "/propertymangae.jpeg", name: "Property Management" },
     { path: "/transaction.jpeg", name: "Transaction Faciliation" },
   ];
 

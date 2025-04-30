@@ -1,7 +1,7 @@
 .about-out {
   width: 100vw;
   display: flex;
-  height: 90vh;
+  /* height: 90vh; */
   flex-direction: column;
   padding: 30px;
   /* background: rebeccapurple; */
@@ -50,6 +50,7 @@
   width: 40%;
   height: 60vh;
   display: flex;
+  gap: 2%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -57,13 +58,35 @@
   padding: 5px;
   box-shadow: 0 6px 18px rgba(61, 60, 60, 0.16);
 }
-
 .about-innright h1 {
   /* background: red; */
   font-size: 1.5rem;
   padding: 10px 50px;
   color: rgb(82, 81, 81);
 }
+
+.about-innright div {
+  /* border: 2px solid gray; */
+ width:80%;
+ height: 20%;
+ background: #000;
+ color: white;
+ border-radius: 5px;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-content: center;
+}
+.clientnum {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+  /* background: red; */
+}
+.clientnum2 {
+  font-size: 1.2rem;
+  /* background: pink; */
+}
+
 
 .about-innright button {
   border: none;
@@ -89,27 +112,7 @@
 .about-innright button svg {
   margin-left: 1%;
 }
-.about-innright div {
-  /* border: 2px solid gray; */
-  width: 60%;
-  border-radius: 10px;
-  background: black;
-  flex-direction: column;
-  display: flex;
-  padding: 10px;
-  margin: 10px;
-  justify-content: start;
-  align-items: center;
-  margin-bottom: 6%;
-  color: white;
-}
-.clientnum {
-  font-size: 1.4rem;
-  /* background: red; */
-}
-.clientnum2 {
-  font-size: 1.2rem;
-}
+
 
 /* ───────────── Desktop → 1240 px ───────────── */
 @media (max-width: 1240px) {
@@ -167,6 +170,8 @@
 /* ───────────── Tablet (≤768 px) ───────────── */
 @media (max-width: 768px) {
   .about-out {
+    /* background: pink; */
+    /* height: 100vh; */
   }
 
   .about-inn {
@@ -182,6 +187,8 @@
   .about-innright div {
     /* border: 2px solid gray; */
     width: 80%;
+    margin-bottom: 2%;
+    
   }
   .clientnum {
     font-size: 1.4rem;
@@ -228,15 +235,19 @@
   .about-innright div {
     /* border: 2px solid gray; */
     width: 80%;
+    
   }
   .clientnum {
     font-size: 1rem;
     text-align: center;
-    margin-bottom: 2%;
+    margin-top: 3%;
+    /* margin-bottom: 2%; */
     /* background: red; */
   }
   .clientnum2 {
     font-size: 1.2rem;
+    margin-top: -1%;
+    margin-bottom: 2%;
   }
 
   .about-innright {

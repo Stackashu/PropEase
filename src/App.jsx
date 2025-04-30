@@ -5,7 +5,7 @@ import About from "./components/About/About";
 // import SideTray from "./components/navbar/SideTray";
 import Client from "./components/Client/Client";
 import Services from "./components/services/Services";
-import VisionValues from "./components/VisionAndValues/VisionValues";
+import VisionValues from "./components/Values/Values";
 import Form from "./components/Form/Form";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
