@@ -75,7 +75,7 @@ nav ul li:hover {
   transition: all 0.3s ease;
 }
 .nav-innright:hover {
-  background: rgba(63, 63, 62, 0.614);
+  background: rgba(31, 31, 30);
 }
 
 .nav-innright h1 {

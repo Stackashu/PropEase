@@ -31,7 +31,7 @@
   display: flex;
   padding: 20px 5%;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 .about-innleft div {
@@ -89,7 +89,7 @@
 .about-innright button svg {
   margin-left: 1%;
 }
-.about-innright div{
+.about-innright div {
   /* border: 2px solid gray; */
   width: 60%;
   border-radius: 10px;
@@ -103,93 +103,153 @@
   margin-bottom: 6%;
   color: white;
 }
-.clientnum{
+.clientnum {
   font-size: 1.4rem;
   /* background: red; */
 }
-.clientnum2{
+.clientnum2 {
   font-size: 1.2rem;
 }
 
 /* ───────────── Desktop → 1240 px ───────────── */
 @media (max-width: 1240px) {
-    .about-inn        { padding: 20px 6%; }
-    .about-innleft div{ width: 32vw; height: 55vh; }
-    .about-innright   { width: 42%; height: 46vh; }
-    .about-innright h1{ font-size: 1.3rem; padding: 40px; }
-    .about-innright button{ font-size: 1.3rem; }
+  .about-inn {
+    padding: 20px 6%;
   }
-  
-  /* ───────────── Small‑desktop / laptop → 990 px ───────────── */
-  @media (max-width: 990px) {
-    .about-inn        { flex-wrap: wrap; gap: 40px; }
-    .about-innleft,
-    .about-innright   { width: 100%; }
-  
-    .about-innleft div{ width: 100%; height: 45vh; }
-  
-    .about-innright   { height: auto; padding: 30px 5%; }
-    .about-innright h1{ font-size: 1.2rem; padding: 30px 0; text-align: center; }
-    .about-innright button{ width: 80%; font-size: 1.2rem; }
+  .about-innleft div {
+    width: 32vw;
+    height: 55vh;
   }
-  
-  /* ───────────── Tablet (≤768 px) ───────────── */
-  @media (max-width: 768px) {
-    .about-out        {  margin-bottom: 10vh; }
-  
-    .about-inn        {  padding: 18px 4%; }
-    .about-innleft div{ height: 38vh; }
-  
-    .about-innright   { padding: 25px 4%;  }
-    .about-innright div{
-      /* border: 2px solid gray; */
-      width: 80%;
-     
-    }
-    .clientnum{
-      font-size: 1.4rem;
-      text-align: center;
-      margin-bottom: 4%;
-      /* background: red; */
-    }
-    .clientnum2{
-      font-size: 1.5rem;
-    }
-    .about-innright h1{ font-size: 1.1rem; padding: 20px 0; }
-    .about-innright button{ width: 90%; font-size: 1.1rem; }
+  .about-innright {
+    width: 42%;
+    height: 46vh;
   }
-  
-  /* ───────────── Mobile (≤480 px) ───────────── */
-  @media (max-width: 480px) {
-    .about-out        { padding: 20px 16px; gap: 5%; margin-bottom: 10%; }
-  
-    .head-box         { margin-top: 5%;}
-    .about-head       { font-size: 1rem; padding: 6px 16px; }
-  
-    .about-inn        { padding: 16px 4%; }
-  
-    .about-innleft div{ height: 32vh; }
-    .about-innright div{
-      /* border: 2px solid gray; */
-      width: 80%;
-    
-    }
-    .clientnum{
-      font-size: 1rem;
-      text-align: center;
-      margin-bottom: 2%;
-      /* background: red; */
-    }
-    .clientnum2{
-      font-size: 1.2rem;
-    }
-  
-    .about-innright   { padding: 20px 4%; gap:2% }
-    .about-innright h1{ font-size: 1rem; padding: 16px 0; }
-    .about-innright button{
-      font-size: 1rem;
-      width: 100%;
-      padding: 10px 0px;
-    }
+  .about-innright h1 {
+    font-size: 1.3rem;
+    padding: 40px;
   }
-  
+  .about-innright button {
+    font-size: 1.3rem;
+  }
+}
+
+/* ───────────── Small‑desktop / laptop → 990 px ───────────── */
+@media (max-width: 990px) {
+  .about-inn {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .about-innleft,
+  .about-innright {
+    width: 100%;
+  }
+
+  .about-innleft div {
+    width: 100%;
+    height: 45vh;
+  }
+
+  .about-innright {
+    height: auto;
+    padding: 30px 5%;
+  }
+  .about-innright h1 {
+    font-size: 1.2rem;
+    padding: 30px 0;
+    text-align: center;
+  }
+  .about-innright button {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+}
+
+/* ───────────── Tablet (≤768 px) ───────────── */
+@media (max-width: 768px) {
+  .about-out {
+  }
+
+  .about-inn {
+    padding: 18px 4%;
+  }
+  .about-innleft div {
+    height: 38vh;
+  }
+
+  .about-innright {
+    padding: 25px 4%;
+  }
+  .about-innright div {
+    /* border: 2px solid gray; */
+    width: 80%;
+  }
+  .clientnum {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 4%;
+    /* background: red; */
+  }
+  .clientnum2 {
+    font-size: 1.5rem;
+  }
+  .about-innright h1 {
+    font-size: 1.1rem;
+    padding: 20px 0;
+  }
+  .about-innright button {
+    width: 90%;
+    font-size: 1.1rem;
+  }
+}
+
+/* ───────────── Mobile (≤480 px) ───────────── */
+@media (max-width: 480px) {
+  .about-out {
+    padding: 20px 16px;
+    gap: 5%;
+    margin-bottom: 10%;
+  }
+
+  .head-box {
+    margin-top: 5%;
+  }
+  .about-head {
+    font-size: 1rem;
+    padding: 6px 16px;
+  }
+
+  .about-inn {
+    padding: 16px 4%;
+  }
+
+  .about-innleft div {
+    height: 32vh;
+  }
+  .about-innright div {
+    /* border: 2px solid gray; */
+    width: 80%;
+  }
+  .clientnum {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2%;
+    /* background: red; */
+  }
+  .clientnum2 {
+    font-size: 1.2rem;
+  }
+
+  .about-innright {
+    padding: 20px 4%;
+    gap: 2%;
+  }
+  .about-innright h1 {
+    font-size: 1rem;
+    padding: 16px 0;
+  }
+  .about-innright button {
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px 0px;
+  }
+}
